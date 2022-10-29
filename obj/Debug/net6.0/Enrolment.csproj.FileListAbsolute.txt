@@ -1,0 +1,15 @@
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\Enrolment.exe
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\Enrolment.deps.json
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\Enrolment.runtimeconfig.json
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\Enrolment.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\Enrolment.pdb
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.csproj.AssemblyReference.cache
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.AssemblyInfoInputs.cache
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.AssemblyInfo.cs
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.csproj.CoreCompileInputs.cache
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\refint\Enrolment.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.pdb
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.genruntimeconfig.cache
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\ref\Enrolment.dll
