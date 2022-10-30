@@ -16,7 +16,7 @@ namespace Enrolment
                     .FirstOrDefault();
                 elephantsInCycle.Add(sPosition);
                 sPosition = result;
-            }
+            }   
             while (elephantsInCycle.FindAll(val => val.Equals(Positions.ElementAt(0).Key)).Count() < 2);
             elephantsInCycle.Remove(elephantsInCycle.Last()); // remove last duplicate item
             return elephantsInCycle;
