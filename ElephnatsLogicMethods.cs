@@ -5,16 +5,16 @@ namespace Enrolment
 {
     public abstract class ElephnatsLogicMethods
     {
-        public int MethodOneForCycle(List<int> mass, List<int> ElephantsInCycle)
+        public int MethodOneForCycle(Dictionary<int,int> elephants)
         {
-            return mass.SumOfMass(ElephantsInCycle) + ((ElephantsInCycle.Count() - 2) *
-                mass.LightestElephant(ElephantsInCycle)); ;
+            return elephants.Sum(x => x.Value) + ((elephants.Count() - 2) *
+                elephants.Min(x => x.Value));
         }
 
-        public int MethodTwoForCycle(List<int> mass, List<int> ElephantsInCycle, int LightestOfAll)
+        public int MethodTwoForCycle(Dictionary<int, int> elephants, int LightestOfAll)
         {
-            return mass.SumOfMass(ElephantsInCycle) + mass.LightestElephant(ElephantsInCycle) +
-                ((ElephantsInCycle.Count() + 1) * LightestOfAll); ;
+            return elephants.Sum(x => x.Value) + elephants.Min(x => x.Value) +
+                ((elephants.Count() + 1) * LightestOfAll); 
         }
 
     }

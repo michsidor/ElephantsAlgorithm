@@ -5,70 +5,41 @@ namespace Enrolment
 {
     public static class ExtensionMethods
     {
-        public static List<int> ReturningOneCycle(this List<int> Input, List<int> Output) // Working Good
+        public static List<int> ReturningOneCycle(this Dictionary<int,int> Positions) // Working Good
         {
-            int iterator = 0;
-            List<int> cyfryWCycklu = new List<int>();
-            int startPosition = Input[0];
+            List<int> elephantsInCycle = new List<int>();
+            int sPosition = Positions.ElementAt(0).Key;
             do
             {
-                for (int i = 0; i < Output.Count(); i++)
-                {
-                    if (Output[i] == startPosition)
-                    {
-                        cyfryWCycklu.Add(Output[i]);
-                        startPosition = Input[i];
-                        break;
-                    }
-                }
-                iterator++;
+                var result = Positions.Where(x => x.Value == sPosition)
+                    .Select(x => x.Key)
+                    .FirstOrDefault();
+                elephantsInCycle.Add(sPosition);
+                sPosition = result;
             }
-            while (cyfryWCycklu.FindAll(val => val.Equals(Input[0])).Count() < 2);
-            cyfryWCycklu.Remove(cyfryWCycklu.Last());
-            return cyfryWCycklu;
+            while (elephantsInCycle.FindAll(val => val.Equals(Positions.ElementAt(0).Key)).Count() < 2);
+            elephantsInCycle.Remove(elephantsInCycle.Last()); // remove last duplicate item
+            return elephantsInCycle;
         }
 
-        public static int SumOfMass(this List<int> mass, List<int> ElephantsInCycle) // Working Good
+        public static Dictionary<int,int> RemovingItemsFromList(this Dictionary<int,int> elephantsAndMass, Dictionary<int,int> positions) 
         {
-            int sumOfMass = 0;
-            for (int i = 0; i < ElephantsInCycle.Count(); i++)
+            foreach (var values in elephantsAndMass)
             {
-                sumOfMass = sumOfMass + mass[ElephantsInCycle[i] - 1];
+                positions.Remove(values.Key);
             }
-            return sumOfMass;
+            return positions;
         }
 
-        public static int LightestElephant(this List<int> mass, List<int> Elephants) // Working Good
+        public static Dictionary<int,int> AddingMassOfDirectElephant(this List<int> elephants, List<int> mass)
         {
-            int lightestElephant = mass[Elephants[0] - 1]; // masa pierwszego sloia
-            //Console.WriteLine("Najmniejsza masa na poczatek" + lightestElephant);
-            for(int i = 0;  i < Elephants.Count(); i++)
+            Dictionary<int, int> elephantsAndMass = new Dictionary<int, int>();
+            foreach(var values in elephants)
             {
-                //Console.WriteLine("Masa" + mass[Elephants[i] - 1]);
-                if (mass[Elephants[i] - 1] < lightestElephant)
-                {
-
-                    lightestElephant = mass[Elephants[i] - 1];
-                    //Console.WriteLine("Zamiana masy: " + lightestElephant);
-                }
+                var result = mass.ElementAt(values - 1);
+                elephantsAndMass.Add(values, result);
             }
-            return lightestElephant;
-        }
-
-
-        public static List<int> RemovingItemsFromList(this List<int> cycle, List<int> fullList) // Working Good
-        {
-            for (int i = 0; i < cycle.Count(); i++)
-            {
-                for (int j = 0; j < fullList.Count(); j++)
-                {
-                    if (cycle[i] == fullList[j])
-                    {
-                        fullList.RemoveAt(j);
-                    }
-                }
-            }
-            return fullList;
+            return elephantsAndMass;
         }
 
     }

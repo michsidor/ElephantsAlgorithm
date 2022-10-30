@@ -5,36 +5,34 @@ namespace Enrolment
 {
     public class ElephantsOrder : ElephnatsLogicMethods
     {
-        private readonly int _numberOfElephants;
-        private List<int>    _elephantsMass;
-        private List<int>    _elephantsStartPosition;
-        private List<int>    _elephantsEndPosition;
-        private int          _finalResult;
+        private readonly int         _numberOfElephants;
+        private List<int>            _elephantsMass;
+        private Dictionary<int, int> _positions;
+        private int                  _finalResult;
 
-        public ElephantsOrder(int numOfElephants, List<int> elephantsMass, List<int> elephantsStartPosition, List<int> elephantsEndPosition)
+        public ElephantsOrder(int numOfElephants, List<int> elephantsMass, Dictionary<int,int> positions)
         {
-            _numberOfElephants      = numOfElephants;
-            _elephantsStartPosition = elephantsStartPosition;
-            _elephantsEndPosition   = elephantsEndPosition;
-            _elephantsMass          = elephantsMass;
+            _numberOfElephants = numOfElephants;
+            _positions         = positions;
+            _elephantsMass     = elephantsMass;
         }
 
         public void PrintResult()
         {
             do
             {
-                var oneCycle = _elephantsStartPosition.ReturningOneCycle(_elephantsEndPosition);
-                var resultMethodOne = MethodOneForCycle(_elephantsMass, oneCycle);
-                var resultMethodTwo = MethodTwoForCycle(_elephantsMass, oneCycle, _elephantsMass.Min());
+                var oneCycle = _positions.ReturningOneCycle();
+                var elephantsAndMass = oneCycle.AddingMassOfDirectElephant(_elephantsMass);
+                var resultMethodOne = MethodOneForCycle(elephantsAndMass);
+                var resultMethodTwo = MethodTwoForCycle(elephantsAndMass, _elephantsMass.Min());
                 if (resultMethodOne > resultMethodTwo)
                     _finalResult = _finalResult + resultMethodTwo;
                 else
                     _finalResult = _finalResult + resultMethodOne;
-                _elephantsStartPosition = oneCycle.RemovingItemsFromList(_elephantsStartPosition);
-                _elephantsEndPosition = oneCycle.RemovingItemsFromList(_elephantsEndPosition);
-            }
-            while (_elephantsStartPosition.Any());
+                elephantsAndMass.RemovingItemsFromList(_positions);
 
+            }
+            while (_positions.Any());
             Console.WriteLine(_finalResult);
         }
     }
