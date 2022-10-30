@@ -13,3 +13,8 @@ C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolm
 C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.pdb
 C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.genruntimeconfig.cache
 C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\ref\Enrolment.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\xunit.assert.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\xunit.core.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\bin\Debug\net6.0\xunit.execution.dotnet.dll
+C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\ZADANIE REKRUTACYJNE\Enrolment\obj\Debug\net6.0\Enrolment.csproj.CopyComplete
